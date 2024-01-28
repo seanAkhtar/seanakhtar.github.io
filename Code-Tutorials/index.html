@@ -14,7 +14,7 @@
 <meta property="og:description" content="After downloading the dependencies from hexo (you have to vist and get them yourself). We will follow the the guide from official hexo docs:Project page If you prefer to have a project page on GitHub:">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2024-01-28T03:49:18.000Z">
-<meta property="article:modified_time" content="2024-01-28T21:49:58.007Z">
+<meta property="article:modified_time" content="2024-01-28T21:55:06.190Z">
 <meta property="article:author" content="um-3R">
 <meta name="twitter:card" content="summary">
   
@@ -106,10 +106,22 @@ Commit and push to the default branch.
 Once the deployment is finished, check the webpage at username.github.io/repository.
 </code></pre>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"># Site</span><br><span class="line">title: Hexo</span><br><span class="line">subtitle: &#x27;some tag here&#x27;</span><br><span class="line">description: &#x27;&#x27;</span><br><span class="line">keywords:</span><br><span class="line">author: um-3R</span><br><span class="line">language: en</span><br><span class="line">timezone: &#x27;&#x27;</span><br><span class="line"># </span><br><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: https://github.com/username/username.github.io</span><br><span class="line">  # example, https://github.com/hexojs/hexojs.github.io</span><br><span class="line">  branch: gh-pages</span><br></pre></td></tr></table></figure>
+
+
+<pre><code>Install hexo-deployer-git.
+Add the following configurations to _config.yml, (remove existing lines if any).
+</code></pre>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: https://github.com/&lt;username&gt;/&lt;project&gt;</span><br><span class="line">  # example, https://github.com/hexojs/hexojs.github.io</span><br><span class="line">  branch: gh-pages</span><br></pre></td></tr></table></figure>
+
+
+<pre><code>Run hexo clean &amp;&amp; hexo deploy.
+Check the webpage at username.github.io.
+</code></pre>
+
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/Code-Tutorials/index.html" data-id="clry1dlsj00008cmxg1rsbwb7" data-title="Code Tutorials" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/Code-Tutorials/index.html" data-id="clry1idf10000chmx9gspbar7" data-title="Code Tutorials" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
